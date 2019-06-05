@@ -1,0 +1,18 @@
+<!-- 这个页面时more-movies的模板页面 -->
+
+<!-- 还要注意的问题: 模板文件中的函数不能写在模板页面的 js 文件中,因为不能执行,所以写在挂载模板文件的页面的js中 -->
+<import src="../../movie/movie-template.wxml" />
+
+<template name="more_template">
+<!-- 这里将 scroll-view 改成view 是为了解决下拉刷新 (enablePullDownRefresh) 与 (scroll-view组件)不能同时存在的问题, bindscrolltolower改为onReachBottom函数。 -->
+  <view class="container" scroll-x="false" scroll-y="true" >
+<!-- onReachBottom="onScrollFooter" -->
+    <block wx:for="{{movies}}" wx:for-item="item">
+      <view class='movie'>
+        <template is="movie" data='{{...item}}'></template>
+      </view>
+    </block>
+
+  </view>
+
+</template>

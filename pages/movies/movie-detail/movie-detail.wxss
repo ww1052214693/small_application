@@ -1,0 +1,149 @@
+/* pages/movies/movie-detail/movie-detail.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50rpx;
+}
+
+
+.bg_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 460rpx;
+  filter: blur(15rpx)
+}
+.bg_img image {
+  width: 100%;
+  height: 100%
+}
+
+
+/* 这里是movie_msg的样式 */
+
+.movie_msg {
+  width: 100%;
+  height: 460rpx
+}
+
+.movie_msg .title {
+  margin-top: 90rpx;
+  margin-bottom: 40rpx;
+  font-size: 36rpx;
+  color:#fff;
+}
+
+.point {
+  display: flex;
+  flex-direction: row;
+  font-size: 24rpx;
+  color: #fff;
+  height: 36rpx;
+  margin-right: 6rpx;
+}
+
+.point view {
+  width: 8rpx;
+  height: 8rpx;
+  background-color: #fff;
+  border-radius: 4rpx;
+ margin-top: 12rpx;
+ margin-left: 6rpx;
+ margin-right: 6rpx;
+}
+
+
+.rating {
+  margin-top: 80rpx;
+  margin-bottom: 40rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 24rpx;
+  color: #ccc
+}
+.rating .rat {
+  color: red
+}
+.rating text {
+   margin-right: 50rpx;
+}
+
+
+/* 这里是海报的样式 */
+
+.post {
+  width: 200rpx;
+  height: 270rpx;
+  position: absolute;
+  top: 300rpx;
+  right: 40rpx;
+}
+
+
+
+
+/* 这里是电影信息样式 */
+
+.movie_attr {
+  font-size: 24rpx;
+  color: #ccc;
+  margin-top: 80rpx;
+}
+
+.attr {
+  margin-bottom: 20rpx;
+}
+
+.attr .one {
+  margin-right: 40rpx;
+}
+
+
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin-top: 60rpx;
+  margin-bottom: 60rpx;
+}
+
+
+
+/* 这里是简介的样式 */
+
+.jian_jie {
+  font-size: 24rpx;
+  color: #ccc
+}
+
+.jian_jie .content {
+  margin-top: 60rpx;
+}
+
+
+
+/* 这里是影人的样式 */
+
+.actor_img {
+  font-size: 24rpx;
+  color: #ccc;
+}
+
+.actor_img text {
+  display: block;
+  margin-bottom: 50rpx;
+}
+
+
+
+
+.actor_img image {
+  width: 200rpx;
+  height: 270rpx;
+  float: left;
+}
+ 

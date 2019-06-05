@@ -1,0 +1,21 @@
+<import src='./movie-list/movie-list-template' />
+<import src='./more-movies/more-template/more-template' />
+
+
+<view class='movie_search'>
+<icon type='search' size='13' color='#405f80' class='search_img'></icon>
+<input type='text' placeholder='你的名字/环太平洋' placeholder-class='placeholder' bindfocus='onBindFocus' bindconfirm='onBindconfirm'></input>
+<image src='/images/icon/xx.png' class='cancel' catchtap='onCancelSearch' wx:if="{{hideShadow}}"></image>
+</view>
+<view>
+<!-- 在template中引入css文件时从小的组件一步步向大的组件引入 -->
+<!-- 在template中传递数据是从大的模板一步步下小的模板延伸 -->
+<template is='movie_list' data='{{...inTheater}}'></template>
+<template is='movie_list' data='{{...comingSoon}}'></template>
+<template is='movie_list' data='{{...top250}}'></template>
+</view>
+
+
+<view class='search_shadow' wx:if="{{hideShadow}}">
+  <template is="more_template"></template>
+</view>

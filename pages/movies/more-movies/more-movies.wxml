@@ -1,0 +1,4 @@
+<import src="./more-template/more-template.wxml" />
+  <view class='cotainer'>
+    <template is="more_template" data="{{movies}}"></template>
+  </view>

@@ -1,0 +1,14 @@
+@import "../../movie/movie-template.wxss";
+
+
+
+.movie {
+  float: left;
+  margin-bottom: 40rpx;
+  margin-left: 10rpx;
+}
+
+
+.container {
+  height: 1300rpx;
+}

@@ -1,0 +1,5 @@
+@import "./more-template/more-template.wxss";
+
+.cotainer {
+  margin-top: 40rpx; 
+}

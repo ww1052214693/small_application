@@ -1,0 +1,23 @@
+<view>
+  <view class='container'>
+    
+    <image src='{{post_Content.headImg}}' class='con-img'></image>
+    <view class='detail-user'>
+      <image src='{{post_Content.avatar}}'></image>
+      <text class='username'>{{post_Content.author}}</text>
+      <text>发表于</text>
+      <text>{{post_Content.dateTime}}</text>
+    </view>
+    <text class='title'>生活感悟</text>
+    <view class='tool'>
+      <view class='collection'>
+        <image catchtap='onShare' src='/images/icon/share-anti.png' class='two'></image>
+        <image wx:if='{{collected}}' catchtap='onCollection' src='/images/icon/collection.png'></image>
+        <image wx:if='{{!collected}}' catchtap='onCollection' src='/images/icon/collection-anti.png' class='anti'></image>
+
+      </view>
+      <view class='line'></view>
+    </view>
+    <text class='content'>{{post_Content.detail}}</text>
+  </view>
+</view>

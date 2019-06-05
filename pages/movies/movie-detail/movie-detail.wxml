@@ -1,0 +1,99 @@
+<view class="container">
+  <view class='bg_img'>
+    <image src="{{movie.bigImg}}"></image>
+  </view>
+  <view class='movie_msg'>
+    <view class='title'>
+
+      <text>{{movie.movie_title}}</text>
+
+    </view>
+
+
+
+    <view class='point'>
+      <text>{{movie.country}}</text>
+      <view></view>
+      <text>{{movie.playDate}}</text>
+    </view>
+
+
+    <view class='rating'>
+      <text class='rat'>{{movie.like}}</text>
+      <text>喜欢</text>
+      <text class='rat'>{{movie.ratings}}</text>
+      <text>条评论</text>
+    </view>
+
+
+  </view>
+
+
+
+  <image class='post' src='{{movie.smallImg}}'></image>
+
+
+
+  <view class='movie_attr'>
+    <view class='attr'>
+      <text class='one'>评分</text>
+      <text>{{movie.average}}分</text>
+    </view>
+
+    <view class='attr'>
+      <text class='one'>导演</text>
+      <text>{{movie.dao_yan}}</text>
+    </view>
+
+
+
+    <view class='attr'>
+      <text class='one'>影人</text>
+      <text>{{actorName}}</text>
+    </view>
+
+
+    <view class='attr'>
+      <text class='one'>类型</text>
+      <text>{{movieType}}</text>
+    </view>
+
+
+  </view>
+
+
+
+  <view class='hr'></view>
+
+
+
+  <view class='jian_jie'>
+    <text>剧情简介</text>
+    <view class='content'>
+
+      <text>{{movie.jian_jie}}</text>
+
+    </view>
+  </view>
+
+
+
+
+  <view class='hr'></view>
+
+
+
+  <view class='actor_img'>
+    <text>影人</text>
+
+    <block wx:for="{{actorImg}}" wx:for-item="item">
+      <image src='{{item}}'></image>
+
+    </block>
+
+
+
+  </view>
+
+
+</view>

@@ -1,0 +1,16 @@
+<template name='postItem'>
+  <view class='post-container'>
+    <view class='post-user'>
+      <image src='{{avatar}}'></image>
+      <text>{{date}}</text>
+    </view>
+    <image src='{{content_img}}' class='img'></image>
+    <text class='tx'>{{content}}</text>
+    <view class='post-other'>
+      <image src='/images/icon/chat.png' class='like'></image>
+      <text>{{collection}}</text>
+      <image src='/images/icon/chat1.png'></image>
+      <text>{{reading}}</text>
+    </view>
+  </view>
+</template>
